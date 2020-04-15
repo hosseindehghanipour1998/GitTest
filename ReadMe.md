@@ -52,7 +52,7 @@ First it's good to mention that we are going to use _Terminal_ to run some comma
 ## Create your project
 Now that we have installed this app, we create react app by simply typing :
 
-` create-ract-app app-name`
+`$ create-ract-app app-name`
 
 If you faced any errors, click [Here](#Errors)
 
@@ -60,7 +60,7 @@ which would create the project you want at the current directory you are in righ
 
 How to ***Finish off*** your project ? by simply typing the command :
 
-`npm run build`
+`$ npm run build`
 
  which would _"Minify"_ all the codes and everything else we have made so far and puts them into a _"Build"_ folder in our project. We can deploy our app by deploying that folder.
 
