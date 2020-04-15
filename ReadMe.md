@@ -31,7 +31,7 @@ The good about _React_ is that if we changed any source file in our _CSS_ , _HTM
 
 
 # Installing Babel
-<div id="#InstallingBabel" />
+
   - First Open Sublime text Editor.
   - press `ctrl + alt + p` which opens a terminal for you.
   - Write `install Package` and press `Enter`. This will show you a list of packages.
