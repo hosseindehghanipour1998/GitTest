@@ -59,6 +59,8 @@ which would create the project you want at the current directory you are in righ
 If we go to _package.json_ we can see that a few tags have been written down there.
 
 Let's start describing each one. Simply type  ` npm start ` and check the opened browser for us. This what you should see on the opened browser:
+
+
 <img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/start.PNG" height="400" width="500" align="middle">
 
 
