@@ -58,7 +58,11 @@ If you faced any errors, click [Here](#Errors)
 
 which would create the project you want at the current directory you are in right now. Now if we go to the directory we can simply see that a lot of files have been created for us.[(a sample)](https://github.com/hosseindehghanipour1998/Web_Programming/tree/master/5%20-%20React%20JS/1%20-%20Create%20Your%20First%20React%20App/first-react-project)
 
-How to _Finish OFF_ your project ? by simply typing the command `npm run build` which would _"Minify"_ all the codes and everything else we have made so far and puts them into a _"Build"_ folder in our project. We can deploy our app by deploying that folder.
+How to ***Finish off*** your project ? by simply typing the command :
+
+`npm run build`
+
+ which would _"Minify"_ all the codes and everything else we have made so far and puts them into a _"Build"_ folder in our project. We can deploy our app by deploying that folder.
 
 ## Wander in the created files
 If we go to _package.json_ we can see that a few tags have been written down there.
