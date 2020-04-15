@@ -45,7 +45,7 @@ First it's good to mention that we are going to use _Terminal_ to run some comma
   - Install NodeJS and NPM[(How to Install NodeJS and NPM ?)](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#how-to-set-up-npm-on-our-computer-)
   - You also need to install [___Lodash___ & ___Live-server___](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#lodash--live-server-packages-) packages.
   - Now we should install ___"Create React App"___ by simply saying : `npm install -g create-react-app`.
-    - We can test _"Create React App"_  version wtih : `create-react-app --version`
+    - We can test _"Create React App"_  version with : `create-react-app --version`
 
   - Now it's time to create our first project.
 
