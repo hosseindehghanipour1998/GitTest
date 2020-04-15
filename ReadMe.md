@@ -55,7 +55,7 @@ Now that we have installed this app, we create react app by simply typing :
 
 If you faced any errors, click [Here](#Errors)
 
-which would create the project you want at the current directory you are in right now. Now if we go to the directory we can simply see that a lot of files have been created for us.[(a sample)](SmapleReactProject)
+which would create the project you want at the current directory you are in right now. Now if we go to the directory we can simply see that a lot of files have been created for us.[(a sample)](#SmapleReactProject)
 
 ## Wander in the created files
 If we go to _package.json_ we can see that a few tags have been written down there.
