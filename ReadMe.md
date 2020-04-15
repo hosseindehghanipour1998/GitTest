@@ -16,7 +16,9 @@ In _React_ we look at everything as ***"Atoms"***  and by combining them we crea
 
 
 Another advantage of _React_ is ***"One Way Data Flow"***. The best way describing it is by looking at the graph below.
-<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/OneWay%20Data%20Flow.PNG" height="500" width="500" align="middle">
+
+
+<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/OneWay%20Data%20Flow.PNG" height="400" width="500" align="middle">
 
 
 If any _red_ components change, only their _children_ would be affected  and theirs _parents_ wouldn't even care about what has happened to their children. This concept prevents a lot of bugs from happening in our code.
