@@ -38,8 +38,12 @@ The good about _React_ is that if we changed any source file in our _CSS_ , _HTM
   - Search for `Babel` and while you found it press `Enter`.
   - Then open  Sublime Text again and at the _Bottom Corner_ of the page you can click on the red rectangle and change it to `babel -> Java Script`
 
+# Installing React For first Time
+  1. Install NodeJS and NPM[(How to Install NodeJS and NPM ?)](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#how-to-set-up-npm-on-our-computer-)
+  2. You also need to install ___Lodash___ & ___Live-server___ packages
+
 ### Warning :
-  - _Sublime text_ doesn't recognize the _React_ files. In order to do so we must install _babel package_ .[How to Install Babel ?](#InstallingBabel)
+  - _Sublime text_ doesn't recognize the _React_ files. In order to do so we must install _babel package_ .[How to Install Babel ?](https://github.com/hosseindehghanipour1998/GitTest#installing-babel)
   - When you see a _React_ code for the first time you may get confused a little bit due to the structure but don't worry you will understand everythingas the time passes.
 
 
