@@ -44,7 +44,7 @@ First it's good to mention that we are going to use _Terminal_ to run some comma
   2. You also need to install [___Lodash___ & ___Live-server___](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#lodash--live-server-packages-) packages.
   3. Now we should install ___"Create React App"___ by simply saying : `npm install -g create-react-app`
     - We can test _"Create React App"_  version wtih : `create-react-app --version`
-  4. Now it's time to create our first project.[Link](#Create your project)
+  4. Now it's time to create our first project.
 
 ## Create your project
 Now that we have installed this app, we create react app by simply typing :
@@ -59,7 +59,7 @@ which would create the project you want at the current directory you are in righ
 If we go to _package.json_ we can see that a few tags have been written down there.
 
 Let's start describing each one. Simply type  ` npm start ` and check the opened browser for us. This what you should see on the opened browser:
-<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/start.PNG" height="800" width="1000" align="middle">
+<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/start.PNG" height="400" width="500" align="middle">
 
 
 ## Created files
