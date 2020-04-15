@@ -81,11 +81,13 @@ Let's start describing each one. Simply type  ` npm start ` and check the opened
 <h1 id="Errors">Errors you may run into </h1>
 
   - If your error was something about `scripts is disabled in this system ` it means that you have to change the ***Execution Policy*** of your system by simply typing : `Set-ExecutionPolicy RemoteSigned` in the terminal.
+
+
   <img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/scripts%20disable%20error.PNG" height="163" width="1000" align="middle">
 
   - If you had any error with the concept of `Missing Write Access` you should simply switch to _Administrator Terminal_ with the shortcut : `alt + f` and then pressing `s` then `r`.
-  <!-- place for image 3 -->
-<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/accessError.PNG" height="466" width="1000" align="middle">
+
+  <img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/accessError.PNG" height="466" width="1000" align="middle">
 
 
 ### Warning :
