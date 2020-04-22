@@ -1,107 +1,63 @@
-# Introduction To React
-React is a [JavaScript](https://flaviocopes.com/javascript/) library that aims to simplify development of visual interfaces.
+# Synchronous vs Asynchronous
+  - _Java Script_ code runs on a _single thread_ which means can only do 1 thing at a time.
+  - All the sequential codes are generally _synchronous_ unless we explicitly say it otherwise.
+  - _Synchronous_ codes wait for 1 action to __"Complete"__ before moving to the next line of code.
+But what happens if a file is highly large and it requires more time to be uploaded on the webpage ? should the whole program be stalled and wait for the file to upload then carry on loading the rest of the page ? ***NO*** that's where ___Asynchronous Calling___ comes handy. _Asynchronous_ calling would let us start a task by not blocking the path of the rest of the program and get out of the way until it's done and then come back.
 
-Developed at Facebook and released to the world in 2013, it drives some of the most widely used code in the world, powering Facebook and Instagram among many, many other software companies.
+### Asynchronous Flow Controls
+  - ***Callbacks*** -> _Good_
+  - ***Promises*** -> _Better_
+  - ***Generators*** -> _Awesome_
 
-Its primary goal is to make it easy to reason about an interface and its state in any point in time, by dividing the UI into a collection of components.
+### AJAX Requests
+  - Stands for : _Asynchronous Javascript And XML_. ( we may use _JSON_ instead of _XML_ these days.)
+  - Communicates with a server with _HTTP Request_.
+  - No need to reload the whole page for editing one element.
 
-React is used to build single-page web applications, among with many other libraries and frameworks that were available before React came into life.
+# What do we need ?
+  - First install a _Live Server_ for _Atom_ by simply going to : `Atom -> File -> Settings -> Install ` and in there search for `atom-live-server` and install that package.
+  - Now let's write our [First Asynchronous Code](https://github.com/hosseindehghanipour1998/Web_Programming/tree/master/6%20-%20Async%20JS/1%20-%20First%20Async%20Request) with JavaScript.
+  - Read more about _atom-live-server_  [here](https://atom.io/packages/atom-live-server).
 
-Reference : [Jaxenter.com](https://jaxenter.com/introduction-react-147054.html)
-### What was before React ?
-_"JQUERY"_ was used before _React_ but it was so messy and complicated to cope with. _React_ was made to help developers build _"Facebook"_ and then used in _"Instagram"_ due to it's simplicity.
+# How to run Atom-Live-Server
+| Command  |  Keybinding | Description  |
+|:-:|:-:|:-:|
+| atom-live-server:start-server | ctrl-alt-l |  Launch live server on default port, by default 3000.  |  
+| atom-live-server:stop-server  | ctrl-alt-q |  Stops currently running instance of live server. |   
+| atom-live-server:start-3000   | ctrl-alt-3 |  Launch live server on port 3000.  |
+| atom-live-server:start-4000   | ctrl-alt-4 |  Launch live server on port 4000.  |
+| atom-live-server:start-5000   | ctrl-alt-5 |	Launch live server on port 5000.  |
+| atom-live-server:start-8000   | ctrl-alt-8 |	Launch live server on port 8000.  |
+| atom-live-server:start-9000   | ctrl-alt-9 |  Launch live server on port 9000.  |
 
-### Principles of React
-In _React_ we look at everything as ***"Atoms"***  and by combining them we create ***"molecules"***. By combining molecules we create ***"Components"*** and by combining components we can create ***"Organisms"*** and using organisms we create ***"Web Pages"***. The advantage of this structure is that we can use other developers components by just simply downloading them and implementing them into out code. In _React_ components we have both ***"User Interface"*** and ***"Functionality"*** of that component together.
+# Callback Hell
+Asynchronous JavaScript, or JavaScript that uses callbacks, is hard to get right intuitively. A lot of code ends up looking like this:
+```
+fs.readdir(source, function (err, files) {
+  if (err) {
+    console.log('Error finding files: ' + err)
+  } else {
+    files.forEach(function (filename, fileIndex) {
+      console.log(filename)
+      gm(source + filename).size(function (err, values) {
+        if (err) {
+          console.log('Error identifying file size: ' + err)
+        } else {
+          console.log(filename + ' : ' + values)
+          aspect = (values.width / values.height)
+          widths.forEach(function (width, widthIndex) {
+            height = Math.round(width / aspect)
+            console.log('resizing ' + filename + 'to ' + height + 'x' + height)
+            this.resize(width, height).write(dest + 'w' + width + '_' + filename, function(err) {
+              if (err) console.log('Error writing file: ' + err)
+            })
+          }.bind(this))
+        }
+      })
+    })
+  }
+})
+```
 
-
-Another advantage of _React_ is ***"One Way Data Flow"***. The best way describing it is by looking at the graph below.
-
-
-<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/OneWay%20Data%20Flow.PNG" height="400" width="500" align="middle">
-
-
-If any _red_ components change, only their _children_ would be affected  and theirs _parents_ wouldn't even care about what has happened to their children. This concept prevents a lot of bugs from happening in our code.
-
-Another advantage of _React_ is something called ***Virtual DOM***. Before _React_ we would refer to each element individually by calling each object by it's _ID_ or _Name_ or etc. But in _React_ we say:
-
- > Hey _React_ , this is the whole object and we want this to look like this, do the rest for us and don't bother us with the ID selection or anything.
-
-And that's what _React_ does. Reaching us to our purpose without bothering us with the details. This is the main reason that we can use _React_ to also write _Mobile Apps_ or _Web Pages_ all together by just telling the _React_ to convert them to each other saving us the time for writing the app for other platforms from scratch.
-
-The good about _React_ is that if we changed any source file in our _CSS_ , _HTML_ or _JS_ code , there is no need for us to refresh the page. React has a _Local Virtual Server_ that does this task for us automatically.
-
-
-# Installing Babel
-
-  - First Open Sublime text Editor.
-  - press `ctrl + alt + p` which opens a terminal for you.
-  - Write `install Package` and press `Enter`. This will show you a list of packages.
-  - Search for `Babel` and while you found it press `Enter`.
-  - Then open  Sublime Text again and at the _Bottom Corner_ of the page you can click on the red rectangle and change it to `babel -> Java Script`
-
-# Installing React For first Time
-First it's good to mention that we are going to use _Terminal_ to run some commands in order to install some files.
-  - Install NodeJS and NPM[(How to Install NodeJS and NPM ?)](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#how-to-set-up-npm-on-our-computer-)
-  - You also need to install [___Lodash___ & ___Live-server___](https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/4%20-%20Javascript/4%20-%20NPM/NPM.MD#lodash--live-server-packages-) packages.
-  - Now we should install ___"Create React App"___ by simply saying : `npm install -g create-react-app`.
-    - We can test _"Create React App"_  version with : `create-react-app --version`
-
-  - Now it's time to create our first project.
-
-## Create your project
-Now that we have installed this app, we create react app by simply typing :
-
-`$ create-ract-app app-name`
-
-If you faced any errors, click [Here](#Errors)
-
-which would create the project you want at the current directory you are in right now. Now if we go to the directory we can simply see that a lot of files have been created for us.[(a sample)](https://github.com/hosseindehghanipour1998/Web_Programming/tree/master/5%20-%20React%20JS/1%20-%20Create%20Your%20First%20React%20App/first-react-project)
-
-How to ***Finish off*** your project ? by simply typing the command :
-
-`$ npm run build`
-
- which would _"Minify"_ all the codes and everything else we have made so far and puts them into a _"Build"_ folder in our project. We can deploy our app by deploying that folder.
-
-## Wander in the created files
-If we go to _package.json_ we can see that a few tags have been written down there.
-
-Let's start describing each one. Simply type  ` npm start ` and check the opened browser for us. This what you should see on the opened browser:
-
-
-<img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/start.PNG" height="400" width="500" align="middle">
-
-
-## Created files
-  - a ***Readme***
-  - ***Package.json***
-    - Dependencies
-    - scripts
-  - ***Package-lock.json :*** Makes sure that the versions of your dependencies are correct.
-  - ***gitignore :*** ignores the files that shouldn't be pushed into our "Github" repository.
-  - ***public folder :*** A few _.js_ files that we must be familiar with since we have already practiced _Java Script_
-  - ***node-modules folder***
-  - ***src folder :*** This is where all the magic is going to happen.
-
-
-
-<!-- Errors Section -->
-<h1 id="Errors">Errors you may run into </h1>
-
-  - If your error was something about `scripts is disabled in this system ` it means that you have to change the ***Execution Policy*** of your system by simply typing : `Set-ExecutionPolicy RemoteSigned` in the terminal.
-
-
-  <img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/scripts%20disable%20error.PNG" height="163" width="1000" align="middle">
-
-  - If you had any error with the concept of `Missing Write Access` you should simply switch to _Administrator Terminal_ with the shortcut : `alt + f` and then pressing `s` then `r`.
-
-  <img src="https://github.com/hosseindehghanipour1998/Web_Programming/blob/master/Misc%20Data/React/accessError.PNG" height="466" width="1000" align="middle">
-
-
-### Warning :
-  - _Sublime text_ doesn't recognize the _React_ files. In order to do so we must install _babel package_ .[How to Install Babel ?](https://github.com/hosseindehghanipour1998/GitTest#installing-babel)
-  - When you see a _React_ code for the first time you may get confused a little bit due to the structure but don't worry you will understand every thing as the time passes.
-
-
-Good Luck.
+[reference](http://callbackhell.com/)
+[Sample Project]()
